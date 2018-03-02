@@ -1,0 +1,53 @@
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body,
+body * {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#root {
+	--text-color: #222;
+	--link-text-color: #3895d1;
+	--link-text-color-hover: #2895d1;
+}
+.App {
+	margin: 0 auto;
+	width: 990px;
+	height: 100%;
+	color: var(--text-color);
+}
+
+.App a {
+	text-decoration: none;
+	color: var(--link-text-color);
+}
+
+.App a:active,
+.App a:hover {
+	color: var(--link-text-color-hover);
+}
+
+@media screen and (min-width: 420px) {
+	.App {
+		background: #f9f9f9;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	.App {
+		background: #f2f2f2;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.App {
+		background: #222;
+	}
+}
